@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=DM+Sans:wght@500&family=Fira+Sans:wght@300&display=swap');
+ 
+
+nav {
+    background-color: #070707;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 99;
+    width: 100%;
+    font-size: 21px;
+    position: fixed;
+    overflow:hidden;
+  }
+  
+  .company-name {
+    float: left;
+    color: #51b928;
+    font-size: 28px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+    margin: 0 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  a {
+    text-shadow: 2px 2px 4px #000000;
+    display:block;
+    padding: 19px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+  }
+  
+  .user-icon {
+    margin-right: 120px;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+  }
+  li a:hover{
+    color: #047913;
+  }
+  li a.active{
+    background-color: rgb(31, 30, 30);
+  }
+  li a:hover:not(.active) {
+    background-color: rgb(31, 30, 30);
+  }
+  
+  .explor{
+    padding-left: 300px;
+    width: auto;
+    height: 250px;
+    background-color:#C1DEAE ;
+    position:static;
+  }
+  .exl{
+    padding-top: 50px;
+    padding-left:70px ;
+    position: static;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 200%;
+    color:#0A2647 ;
+  }
+
+  #topic{
+    font-family: 'Cinzel', serif;
+    font-size: 170%;
+    text-align: center;
+    color:#000000 ;
+
+  }
+   #body{
+    margin: 0;
+    padding: 0;
+  } 
+
+  .buttons{
+    width: 100px;
+    height:40px;
+    background-color:#ffffff ;
+    outline:2px solid #000;
+
+  }
+  #cb1{
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: right;
+    color: rgb(0, 0, 0);
+    background-color: #F2F5C8;
+
+  }
+  #cb2{
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+    float: right;
+    color: rgb(0, 0, 0);
+    background-color: #52734D;
+
+  }
+  #cb3{
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 50px;
+    float: right;
+    color: rgb(0, 0, 0);
+    background-color: #153462;
+
+  }
+  #cb4{
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 70px;
+    float: right;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+
+  }
+
+
+  #gallery{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  #place_container{
+     margin: 0;
+     padding:0;
+     outline: none;
+     border: none;
+     background:white;
+     text-decoration: none;
+     transition: all.2s linear;
+     text-transform: capitalize;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(352px, 1fr)); 
+     gap: 3rem;
+  }
+ 
+
+
+  .place{
+    text-align: center;
+    padding: 20px;
+    background: #F6F1F1;
+    box-shadow: 0.02rem 0.02rem #000000 ;
+    outline: 1.5px solid #6A759B ;
+    outline-offset: -0.8rem;
+    image-orientation: calc(auto);
+    cursor:pointer
+    d
+  }
+  .place:hover img{
+    transform: scale(.995) ; 
+    
+    
+  }
+  
+
+  .place:hover{
+    outline: 2px solid #6A759B ;
+    outline-offset: 0rem;
+  }
+  #all_contentbox{
+    
+    width: 100%;
+    padding: 20px;
+    background-color: #047913
+
+  }
+  /* EBFFFA */
+
+
+  #content_box{
+    top: 6%;
+    left: 20%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 100px;
+    width:60%;
+    height:600px;
+    background-image:radial-gradient(farthest-corner at 10px 10px,#EEF9BF,#75B79E);
+    padding: 32px;
+    outline: 2px solid #7c7979;
+    border-radius: 0.5rem;  
+  }
+  /* The Modal (background) */
+.model {
+  display: none; 
+  justify-items: auto;/* Hidden by default */
+  /* position: fixed; /* Stay in place */
+  
+}
+
+/* Modal Content */
+.model-content {
+  
+  position: fixed;
+  top:0; left:0;
+  background :rgba(0, 0, 0, .9);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+  
+
+
+  #picture img{
+    width:400px;
+    height:400px;
+  }
+ #image_slider{
+  float: right;
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+}
+#picture{
+  display: flex;
+  aspect-ratio:16px / 9px;
+  overflow-x:auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; 
+  box-shadow: 1rem 1rem 1rem -0.5rem hsla(0, 1%, 53%, 0.25);
+  border-radius: 0.5rem;
+}  
+#picture img{
+  flex:1 0 100%;
+ scroll-snap-align:start;
+ object-fit: cover;
+}
+
+
+#content{
+  float:left;
+  padding:auto ;
+  width:350px;
+  height: 550px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+#close{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin: -28px;
+  float: right;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-color: #EBFFFA;
+  border-radius: 4px;
+}
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+footer{
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+}
+.row3::after{
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 50px;
+}
+.footer-class{
+  position: relative;
+  width: 43.5%; 
+  float: left;
+  padding: 0px;
+  top: 20px;
+  left: 30px;
+  border-radius: 25px;
+}
+.contact{
+  position: relative;
+  width: 43.5%; 
+  float: right;
+  padding: 0px;
+  top: 20px;
+  border-radius: 25px;
+
+}
+.footer-class h4{
+  font-size: 25px;
+}
+.contact h4{ 
+  font-size: 25px;
+}
+.creator a{
+  text-decoration: none;
+  display:block;
+  color: #ffffff;
+  text-align: center;
+}
+.contact a{ 
+  text-decoration: none;
+  display:block;
+  color: #ffffff;
+}
+
+/* css of site map */
+#map{
+  
+  width: 100%;
+  height:700PX;
+  background-color: #eaf1f1;
+}
+
+#map g:hover text{
+  fill:#929AAB;
+  font-weight: bold;
+
+}
+#map g:hover rect{
+  fill: #153462;
+  stroke:#929AAB;
+  stroke-width: 5px;
+}
+
+.sitehead{
+  background-color:#C1DEAE ;
+  width: 100%;
+  height: 200px;
+  padding-top:175px ;
+  text-align: center;
+  text-shadow: #153462;
+  text-underline-position: below;
+  font-size: 40px;
+  font-family: 'DM Sans', sans-serif;
+  color: #222831;
+}
+/* css of cult.html */
+.culttop{
+  margin-bottom: 30px;
+  padding: 20px;
+  padding-top: 100px;
+  width: auto;
+  height:  275px;
+  background-color:#C1DEAE ;
+  position: center;
+  font-family: 'DM Sans', sans-serif;
+  outline: 4px solid #222831;
+  text-align: left;
+
+}
+.cult{
+  margin: 20px;
+  font-family: 'DM Sans', sans-serif;
+
+}
+.eventpic{
+  float: right;
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto
+  
+  
+
+}
+ .event{
+  top: 20%;
+  left: 20px;
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  width:1400px;
+  height:600px;
+  background-color: whitesmoke;
+  padding: 32px;
+  outline: 2px solid #7c7979;
+  border-radius: 0.5rem;  
+} 
+
+.epic img{
+  width:400px;
+  height:400px;
+}
+
+
+.epic{
+  display: flex;
+  aspect-ratio:16px / 9px;
+  overflow-x:auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; 
+  box-shadow: 1rem 1rem 1rem -0.5rem hsla(0, 1%, 53%, 0.25);
+  border-radius: 0.5rem;
+}  
+.epic img{
+  flex:1 0 100%;
+  scroll-snap-align:start;
+  object-fit: cover;
+}
+
+/* css of page editor */
+
+.pg1{
+ text-align: center;
+ margin: 20px;
+ background-color: fuchsia;
+}
+.pg2{
+  margin: 20px;
+  padding: 8px;
+  text-align: center;
+  outline:4px solid #222831;
+ }
+ .pg3{
+  margin:20px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: fuchsia;
+ }
+

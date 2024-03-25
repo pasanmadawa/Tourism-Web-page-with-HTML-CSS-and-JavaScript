@@ -1,0 +1,62 @@
+ nav {
+    background-color: #070707;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 99;
+    width: 100%;
+    font-size: 24px;
+    position: fixed;
+    width: 100%;
+    overflow:hidden;
+    z-index: 999;
+  }
+  
+  .company-name {
+    float: left;
+    color: #51b928;
+    font-size: 28px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+    margin: 0 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  li a {
+    text-shadow: 2px 2px 4px #000000;
+    display:block;
+    padding: 22px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+  }
+  
+  .user-icon {
+    margin-right: 120px;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+  }
+  li a:hover{
+    color: #047913;
+  }
+  li a.active{
+    background-color: rgb(31, 30, 30);
+  }
+  li a:hover:not(.active) {
+    background-color: rgb(31, 30, 30);
+  }

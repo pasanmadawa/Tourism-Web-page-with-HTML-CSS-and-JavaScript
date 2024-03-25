@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}</style>
+<title>Rambler</title>
+</head>
+ <link rel="stylesheet" href="Gallery.css"> 
+
+    
+<body id="body">
+  <nav>
+    <div class="company-name">Rambler </div>  
+    
+    <ul>
+      <li><a href="main.html" >Home</a></li>
+      <li><a href="comment.html">Comment</a></li>
+      <li><a href="aboutus.html">Book</a></li>
+      <li><a href="gallery.html"class="active">Gallery</a></li>
+      <li><a href="quizstarting.html">Quiz</a></li>
+      <li><a href="sitemap.html" >Site Map</a></li>
+      <li><a href="aboutus.html">About Us</a></li> 
+    </ul>
+        <div class="user-icon"><i class="fa fa-user"></i></div>
+  </nav>
+
+
+
+<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<div class="container">
+  <div class="explor">
+      <div class="exl"><h2> Explore Sri Lanka </h2></div> 
+  </div>
+  
+  <div id="gallery">
+      <!--PUT DIV HERE AND CREATE THE BUTTONS-->
+      <div class="buttons">
+        <button  id="cb1">1</button>
+        <button  id="cb2">2</button>
+        <button  id="cb3">3</button>
+        <button  id="cb4">4</button>
+        
+      </div>
+        <script>
+         document.getElementById("cb1").
+         addEventListener("click",function(){
+            document.getElementById("body").style.backgroundColor="#F2F5C8";
+            document.getElementById("place_container").style.backgroundColor="#F2F5C8";
+         });
+         document.getElementById("cb2").
+         addEventListener("click",function(){
+            document.getElementById("body").style.backgroundColor="#52734D";
+            document.getElementById("place_container").style.backgroundColor="#52734D";
+         });
+         document.getElementById("cb3").
+         addEventListener("click",function(){
+            document.getElementById("body").style.backgroundColor="#0A2647";
+            document.getElementById("place_container").style.backgroundColor="#0A2647";
+         });
+         document.getElementById("cb4").
+         addEventListener("click",function(){
+            document.getElementById("body").style.backgroundColor="white";
+            document.getElementById("place_container").style.backgroundColor="white";
+         });
+         
+
+              </script>
+
+      
+      <h3 id="topic">GALLERY</h3>
+      <div id="place_container"> <!--put here the dcrolling animation-->
+          <div id="mybtn1" class="place">
+          
+              <img  src= "Images/kandys4.jpg" alt="photo of kandy" width="320px" height="320px">
+              <h3 id="place1" >KANDY</h3>
+              
+          </div>
+          <div id="mybtn2" class="place" >
+          
+              <img  src= "Images/badullas4.jpg" alt="photo of badulla " width="320px" height="320px">
+              <h3>BADULLA</h3>
+          </div>
+          <div id="mybtn3"class="place" >
+          
+              <img  src= "Images/nuwaraeliyas4.jpg" alt="photo of nuwara eliya" width="320px" height="320px">
+              <h3>NUWARA ELIYA</h3>
+          </div>
+          <div id="mybtn4" class="place">
+          
+              <img  src= "Images/galles4.jpg" alt="photo of galle" width="320px" height="320px">
+              <h3>GALLE</h3>
+          </div>
+          <div id="mybtn5" class="place">
+          
+              <img  src= "Images/matharas4.jpg" alt="photo of matahra" width="320px" height="320px">
+              <h3>MATARA</h3>
+          </div>
+          <div id="mybtn6" class="place">
+          
+              <img  src= "Images/trincos4cont1.jpg" alt="photo of trincomalee" width="320px" height="320px">
+              <h3>TRINCOMALEE</h3>
+          </div>
+          <div id="mybtn7" class="place">
+          
+              <img  src= "Images/sigiriyas4.jpg" alt="photo of sigiriya" width="320px" height="320px">
+              <h3>SIGIRIYA</h3>
+          </div>
+          <div id="mybtn8" class="place">
+          
+              <img  src= "Images/polonnaruwas4.jpg" alt="photo of polonnaruwa" width="320px" height="320px">
+              <h3>POLONNARUWA</h3>
+          </div>
+          <div id="mybtn9" class="place">
+          
+              <img  src= "Images/jaffnas4cont1.jpg" alt="photo of jaffna" width="320px" height="320px">
+              <h3>JAFFNA</h3>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModel1" class="model">
+
+  <!-- Modal content -->
+  <div class="model-content" >
+    <div id="content_box">
+        <button class="close1" id="close">X</button>
+        <div id="image_slider" >
+            <div id="picture">
+                <img id="slide1" src="Images/kandys4.jpg" >   
+                <img id="slide2" src="Images/kandys4cont1.jpg" >  
+                <img id="slide3" src="Images/kandys4cont2.jpg" > 
+                <img id="slide4" src="Images/kandys4cont3.jpg" >  
+                <img id="slide5" src="Images/kandys4cont4.jpg" > 
+                <img id="slide6" src="Images/kandys4cont5.jpg" >  
+                <img id="slide7" src="Images/kandys4cont6.jpg" >    
+            </div>
+        </div>
+        <div id="content" >
+            <h2>KANDY</h2>
+            <P>Kandy  is a major city in Sri Lanka located in the Central Province. It was the last capital of the ancient kings' era of Sri Lanka.The city is situated in the midst of hills in the Kandy plateau, which crosses an area of tropical plantations, mainly tea. Kandy is both an administrative and religious city and is also the capital of the Central Province. Kandy is the home of the Temple of the Tooth Relic (Sri Dalada Maligawa), one of the most sacred places of worship in the Buddhist world. It was declared a world heritage site by UNESCO in 1988. Historically the local Buddhist rulers resisted Portuguese, Dutch, and British colonial expansion and occupation.</P>
+        </div>
+    </div>
+    
+   
+  </div>
+
+</div>
+
+<div id="myModel2" class="model">
+  <div class="model-content" >
+    <div id="content_box" >
+      <button class="close2" id="close" >X</button>
+      <div id="image_slider" >
+          <div id="picture">
+              <img id="slide1" src="Images/badullas4.jpg" >   
+              <img id="slide2" src="Images/badullas4cont1.jpg" >  
+              <img id="slide3" src="Images/badullas4cont2.jpg" >
+              <img id="slide4" src="Images/badullas4cont3.png" >
+              <img id="slide5" src="Images/badullas4cont4.jpg" >
+              <img id="slide6" src="Images/badullas4cont5.jpg" >   
+          </div>
+      </div>
+      <div id="content">
+          <h2>BADULLA</h2>
+          <P>Badulla  is the capital and the largest city of Uva Province situated in the lower central hills of Sri Lanka. It is the capital city of Uva Province and the Badulla District.Badulla is located in the southeast of Kandy, almost encircled by the Badulu Oya River, about 680 m (2,230 ft) above sea level and is surrounded by tea plantations. The city is overshadowed by the Namunukula range of mountains (highest peak 2,016 m (6,614 ft) above sea level). It was a base of a pre-colonial Sinhalese local prince (regional king) who ruled the area under the main King in Kandy before it became part of the British Empire. Later, it became one of the provincial administrative hubs of the British rulers. The city was the terminus of upcountry railway line built by the British in order to take mainly tea plantation products to Colombo.</P>
+      </div>
+  </div>
+    
+   
+  </div>
+
+</div>
+
+<div id="myModel3" class="model">
+  <div class="model-content" >
+    <div id="content_box" >
+      <button class="close3"id="close" >X</button>
+      <div id="image_slider" >
+          <div id="picture">
+              <img id="slide1" src="Images/nuwaraeliyas4.jpg" >   
+              <img id="slide2" src="Images/nuwaraeliyas4cont1.jpg" >  
+              <img id="slide3" src="Images/nuwaraeliyas4cont2.jpg" >
+              <img id="slide4" src="Images/nuwaraeliyas4cont3.jpg" >
+              <img id="slide5" src="Images/nuwaraeliyas4cont4.jpg" >
+              <img id="slide6" src="Images/nuwaraeliyas4cont5.jpg" >
+              <img id="slide7" src="Images/nuwaraeliyas4cont6.jpg" >
+          </div>
+          
+         
+      </div>
+      <div id="content">
+          <h2>NUWARA ELIYA</h2>
+          <P>Nuwara Eliya  is a city in the hill country of the Central Province, Sri Lanka. Its name means "city on the plain (table land)" or "city of light". The city is the administrative capital of Nuwara Eliya District, with a picturesque landscape and temperate climate. It is at an altitude of 1,868 m (6,128 ft) and is considered to be the most important location for tea production in Sri Lanka. The city is overlooked by Pidurutalagala, the tallest mountain in Sri Lanka. Nuwara Eliya is known for its temperate, cool climate – the coolest area in Sri Lanka.
+
+              The city was founded by Samuel Baker, the explorer of Lake Albert and the upper Nile in 1846. Nuwara Eliya's climate lent itself to becoming the prime sanctuary of the British civil servants and planters in Ceylon. Nuwara Eliya, called Little England, was a hill country retreat where the British colonialists could immerse themselves in their pastimes such as fox hunting, deer hunting, elephant hunting, polo, golf and cricket.
+              
+              
+              Many of the buildings retain features from the colonial period such as the Queen's Cottage, General's House, Grand Hotel, Hill Club, St Andrew's Hotel and Town Post Office. New hotels are often built and furnished in the colonial style. Visitors to the city can wallow in its nostalgia of bygone days by visiting the landmark buildings. Many private homes maintain their old English-style lawns and gardens.</P>
+      </div>
+  </div>
+    
+   
+  </div>
+
+</div>
+
+<div id="myModel4" class="model">
+  <div class="model-content" >
+    <div id="content_box" >
+      <button id="close" class="close4" >X</button>
+      <div id="image_slider" >
+          <div id="picture">
+              <img id="slide1" src="Images/galles4.jpg" >   
+              <img id="slide2" src="Images/galles4cont1.jpg" >  
+              <img id="slide3" src="Images/galles4cont2.jpg" > 
+              <img id="slide4" src="Images/galles4cont3.jpg" >  
+              <img id="slide5" src="Images/galles4cont4.jpg" > 
+              <img id="slide6" src="Images/galles4cont5.jpg" >      
+          </div>
+      </div>
+      <div id="content" >
+          <h2>GALLE</h2>
+          <P>Galle is a major city in Sri Lanka, situated on the southwestern tip, 119 km (74 mi) from Colombo. Galle is the provincial capital and largest city of Southern Province, Sri Lanka and is the capital of Galle District.
+            Galle is the best example of a fortified city built by the Portuguese in South and Southeast Asia, showing the interaction between Portuguese architectural styles and native traditions. The city was extensively fortified by the Dutch during the 17th century from 1649 onwards. The Galle fort is a world heritage site and is the largest remaining fortress in Asia built by European occupiers.Important natural geographical features in Galle include Rumassala in Unawatuna, a large mound-like hill that forms the eastern protective barrier to Galle Harbour. Local tradition associates this hill with some events of Ramayana, one of the great Hindu epics. 
+           
+          </P>
+      </div>
+  </div>
+    
+   
+  </div>
+
+</div>
+
+<div id="myModel5" class="model">
+  <div class="model-content" >
+    <div id="content_box" >
+      <button id="close" class="close5" >X</button>
+      <div id="image_slider" >
+          <div id="picture">
+              <img id="slide1" src="Images/matharas4.jpg" >   
+              <img id="slide2" src="Images/matharas4cont1.jpg" >  
+              <img id="slide3" src="Images/matharas4cont2.jpg" > 
+              <img id="slide4" src="Images/matharas4cont3.jpg" >  
+              <img id="slide5" src="Images/matharas4count4.jpg" > 
+              <img id="slide6" src="Images/matharas4cont5.jpg" >     
+          </div>
+      </div>
+      <div id="content" >
+          <h2>MATARA</h2>
+          <P>Matara is a major city in Sri Lanka, on the southern coast of Southern Province. It is the second largest city in Southern Province. It is 160 km (99 mi) from Colombo. It is a major commercial hub, and it is the administrative capital and largest city of Matara District.Matara is a busy, booming and sprawling commercial town. Matara's main attractions are its ramparts, Dutch architecture, a well-preserved fort and its street life.
+
+              Parey Dewa (Rock in Water) or Paravi Dupatha temple is a relatively modern Buddhist temple on Pigeon Island (a small offshore island) in front of the city. It is reached by an elegant cable-stayed footbridge, which was erected in 2008 (replacing an earlier bridge, which was washed away in the 2004 tsunami). The temple is set in attractive gardens and houses numerous statues of Buddha and a replica of the alleged footprint found on Adam's Peak.Star Fort is on the western or landward side of the Nawali River. The fort was constructed by the Dutch following the Matara rebellion in 1761, to protect the main fort from attacks originating from the river. Construction of the unique star-shaped fort was completed in 1765.</P>
+      </div>
+  </div>
+    
+   
+  </div>
+
+</div>
+
+<div id="myModel6" class="model">
+  <div class="model-content" >
+    <div id="content_box" >
+      <button id="close" class="close6" >X</button>
+      <div id="image_slider" >
+          <div id="picture">
+              <img id="slide1" src="Images/trincos4cont1.jpg" >   
+              <img id="slide2" src="Images/trincos4cont2.jpeg" >  
+              <img id="slide3" src="Images/trincos4cont3.jpg" > 
+              <img id="slide4" src="Images/trincos4cont4.jpg" >  
+              <img id="slide5" src="Images/trincos4cont5.jpeg" > 
+              <img id="slide6" src="Images/trincos4cont6.jpg" >  
+              <img id="slide7" src="Images/trincos4.jpg" >    
+          </div>
+      </div>
+      <div id="content" >
+          <h2>TRINCOMALEE</h2>
+          <P>Trincomalee  is the administrative headquarters of the Trincomalee District and major resort port city of Eastern Province, Sri Lanka. Located on the east coast of the island overlooking the Trincomalee Harbour, 237 kilometres (147 mi) north-east of Colombo, 182 kilometres (113 mi) south-east of Jaffna and 111 kilometres (69 mi) miles north of Batticaloa, Trincomalee has been one of the main centres of Sri Lankan Tamil language speaking culture on the island for over two millennia. With a population of 99,135, the city is built on a peninsula of the same name, which divides its inner and outer harbours.
+              The harbour is renowned for its large size and security; unlike any other in the Indian Ocean, it is accessible in all weathers to all craft. It has been described as the "finest harbour in the world" and by the British, "the most valuable colonial possession on the globe, as giving to our Indian Empire a security which it had not enjoyed from elsewhere". Popular tourist destinations include its beaches at Uppuveli, Salli and Nilaveli, used for temple visits, surfing, scuba diving, fishing and whale watching, and the Kanniya Hot Springs. Trincomalee is served by a campus of the Eastern University, Sri Lanka and has been the inspiration of both domestic and international poetry, films, music and literature for many centuries.
+            </P>
+      </div>
+  </div>
+    
+   
+  </div>
+
+</div>
+
+<div id="myModel7" class="model">
+  <div class="model-content" >
+    <div id="content_box" >
+      <button id="close"class="close7" >X</button>
+      <div id="image_slider" >
+          <div id="picture">
+              <img id="slide1" src="Images/sigiriyas4.jpg" >   
+              <img id="slide2" src="Images/sigiriyas4cont1.jpg" >  
+              <img id="slide3" src="Images/sigiriyas4cont2.jpg" > 
+              <img id="slide4" src="Images/sigiriyas4cont3.jpg" >  
+              <img id="slide5" src="Images/sigiriyas4cont4.jpg" > 
+              <img id="slide6" src="Images/sigiriyas4cont5.jpg" >      
+          </div>
+      </div>
+      <div id="content" >
+          <h2>SIGIRIYA</h2>
+          <P>Sigiriya or Sinhagiri  is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. It is a site of historical and archaeological significance that is dominated by a massive column of granite rock approximately 180 m (590 ft) high.
+
+              According to the ancient Sri Lankan chronicle the Cūḷavaṃsa, this area was a large forest, then after storms and landslides it became a hill and was selected by King Kashyapa (AD 477–495) for his new capital. He built his palace on top of this rock and decorated its sides with colourful frescoes. On a small plateau about halfway up the side of this rock he built a gateway in the form of an enormous lion. The name of this place is derived from this structure; Sīnhāgiri, the Lion Rock (an etymology similar to Sinhapura, the Sanskrit name of Singapore, the Lion City).
+              
+              The capital and the royal palace were abandoned after the king's death. It was used as a Buddhist monastery until the 14th century. Sigiriya today is a UNESCO listed World Heritage Site. It is one of the best preserved examples of ancient urban planning.
+              </P>
+      </div>
+  </div>
+
+    
+   
+  </div>
+
+</div>
+
+<div id="myModel8" class="model">
+  <div class="model-content" >
+    <div id="content_box" >
+      <button id="close" class="close8">X</button>
+      <div id="image_slider" >
+          <div id="picture">
+              <img id="slide1" src="Images/polonnaruwas4.jpg" >   
+              <img id="slide2" src="Images/polonnaruwas4cont1.jpg" >  
+              <img id="slide3" src="Images/polonnaruwas4cont2.jpg" > 
+              <img id="slide4" src="Images/polonnaruwas4cont3.jpg" >  
+              <img id="slide5" src="Images/polonnaruwas4cont4.jpg" > 
+              <img id="slide6" src="Images/polonnaruwas4cont5.jpg" >  
+              <img id="slide7" src="Images/polonnaruwas4cont6.jpg" >    
+          </div>
+      </div>
+      <div id="content" >
+          <h2>POLONNARUWA</h2>
+          <P>Poḷonnaruwa,also referred as Pulathisipura and Vijayarajapura in ancient times, is the main town of Polonnaruwa District in North Central Province, Sri Lanka. The modern town of Polonnaruwa is also known as New Town, and the other part of Polonnaruwa remains as the royal ancient city of the Kingdom of Polonnaruwa.
+
+              The second oldest of all Sri Lanka's kingdoms, Polonnaruwa was first established as a military post by the Sinhalese kingdom. It was renamed Jananathamangalam by the Chola dynasty after their successful invasion of the country's then capital, Anuradhapura, in the 10th century. The Ancient City of Polonnaruwa has been declared a World Heritage Site.</P>
+      </div>
+  </div>
+    
+   
+  </div>
+
+</div>
+
+<div id="myModel9" class="model">
+  <div class="model-content" >
+    <div id="content_box" >
+      <button id="close" class="close9">X</button>
+      <div id="image_slider" >
+          <div id="picture">
+              <img id="slide1" src="Images/jaffnas4cont1.jpg" >   
+              <img id="slide2" src="Images/jaffnas4.jpg" >  
+              <img id="slide3" src="Images/jaffnas4cont2.jpg" > 
+              <img id="slide4" src="Images/jaffnas4cont3.jpg" >  
+              <img id="slide5" src="Images/jaffnas4cont4.jpg" > 
+              <img id="slide6" src="Images/jaffnas4cont5.jpg" >  
+              <img id="slide7" src="Images/jaffnas4cont6.jpg" >    
+          </div>
+      </div>
+      <div id="content" >
+          <h2>JAFFNA</h2>
+          <P>Jaffna  is the capital city of the Northern Province of Sri Lanka.The majority of the city's population are Sri Lankan Tamils with a significant number of Sri Lankan Moors, Indian Tamils and other ethnic groups present in the city prior to the civil war. Most Sri Lankan Tamils are Hindus followed by Christians, Muslims and a small Buddhist minority. The city is home to number of educational institutions established during the colonial and post-colonial period. It also has number of commercial institutions, minor industrial units, banks, hotels and other government institutions. It is home to many historical sites such as the popular Jaffna library that was burnt down and rebuilt and the Jaffna fort which was rebuilt during the Dutch colonial period.</P>
+      </div>
+  </div>
+</div>
+
+    
+   
+  </div>
+
+</div>
+
+
+
+<footer>
+  <div class="row3">
+  <div class="footer-class">
+    <h4 id="about-us">About Us</h4>
+    <p><b>Rambler</b> is one of the most respected and successful names in the global travel industry,<br> 
+      with a long and rich company heritage spanning 30 years. The definitive resource for global travel<br> content,
+      its reputation has been built on journalistic credibility.A fast-growing, 
+      pioneering and <br>diverse global travel content business, contact us to find out more about us.</p>
+  </div>
+  <div class="contact">
+    <h4>Follows Us On:</h4>
+    <p><a href="">Instergram</a></p>
+    <p><a href="">Facebook</a></p>
+    <p><a href="">Twitter</a></p>
+  </div>
+  </div>
+  <div class="creator">
+    <a href="pageEDs4.html" target="_blank">created by:Student 4</a>
+  </div>
+  <p style="margin-left: 30px;"><a href="main.html" style="text-decoration: none;color: rgb(13, 159, 5);"><img src="Images/leaf_logo.ico" alt="logo" type = "images/x-icon" style="width: 50px; height: 50px; float: right; margin-right: 20px; ">www.Rambler.lk</a></p> 
+</footer>
+
+<script src="Gallery2.js"></script> 
+
+</body>
+</html>

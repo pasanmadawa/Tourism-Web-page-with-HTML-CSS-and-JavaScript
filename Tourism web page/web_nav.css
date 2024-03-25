@@ -1,0 +1,71 @@
+nav {
+    background-color: #070707;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20;
+    z-index: 99;
+    width: 100%;
+    font-size: 21px;
+    position:static;
+    width: 100%;
+    overflow:hidden;
+    
+  }
+  
+  .company-name {
+    float: left;
+    color: #51b928;
+    font-size: 28px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+    margin: 0 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  a {
+    text-shadow: 2px 2px 4px #000000;
+    display:block;
+    padding: 19px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+  }
+  
+  .user-icon {
+    margin-right: 120px;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+  }
+  li a:hover{
+    color: #047913;
+  }
+  li a.active{
+    background-color: rgb(31, 30, 30);
+  }
+  li a:hover:not(.active) {
+    background-color: rgb(31, 30, 30);
+  }
+  li a.active::after{
+    background-color: #047913;
+    content: "";
+  }
+  li a:hover::after{
+    background-color: #047913;
+    content: "";
+    
+  }

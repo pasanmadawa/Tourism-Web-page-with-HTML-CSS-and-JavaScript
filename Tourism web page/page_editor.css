@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    width: 100%;
+    height: 50px;
+    background: #0c6b21;
+    display: flex;
+    justify-content: center;
+  }
+  .container p{
+    line-height: 0.1;
+    font-size: 28px;
+    color: white;
+  }
+  .name p{
+    font-size: 22px;
+    line-height: 0.2;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif
+  }
+  h3{
+    font-size: 24px;
+    text-align: center;
+  }
+  .container1{
+    width: 100%;
+    height: 100vh;
+    background: #71e361;
+    display: flex;
+    justify-content: center;
+  }
+ p{
+  font-size: 20px;
+    text-align: center;
+  }

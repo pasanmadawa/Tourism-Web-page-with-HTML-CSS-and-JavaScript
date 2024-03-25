@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rambler</title>
+    <link rel = "icon" href = "Images/leaf_logo.ico" type = "images/x-icon">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="comment.css">
+
+</head>
+<body>
+    <nav>
+        <div class="company-name">Rambler</div>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="comment.html" class="active">Comment</a></li>
+          <li><a href="web_cw.html">Book</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="quizstarting.html">Quiz</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <div class="user-icon"><i class="fa fa-user"></i></div>
+    </nav>
+    
+    <div class="container" id="error">
+        <form id="form-id" name="myform" onsubmit="return validate()" action="mailto:shehannavindu30@gmail.com" method="post" enctype="text/plain">
+            <p style="font-size: 30px;text-align: center;">Hello from Rambler</p>
+          <fieldset>
+          <p style="font-size: 18px;">On a scale from 0 to 10, how likely are you to recommend us to your friend?</p>
+          <p></p>
+          <div class="input-group">
+            <label for="0">0<input type="radio" name="option" value="0" id="0"></label>
+            <label for="1">1<input type="radio" name="option" value="1" id="1"></label>
+            <label for="2">2<input type="radio" name="option" value="2" id="2"></label>
+            <label for="3">3<input type="radio" name="option" value="3" id="3"></label>
+            <label for="4">4<input type="radio" name="option" value="4" id="4"></label>
+            <label for="5">5<input type="radio" name="option" value="5" id="5"></label>
+            <label for="6">6<input type="radio" name="option" value="6" id="6"></label>
+            <label for="7">7<input type="radio" name="option" value="7" id="7"></label>
+            <label for="8">8<input type="radio" name="option" value="8" id="8"></label>
+            <label for="9">9<input type="radio" name="option" value="9" id="9"></label>
+            <label for="10">10<input type="radio" name="option" value="10" id="10"></label>
+            <span id="label-error"></span>
+          </div>
+          </fieldset>
+        <p></p>
+        <fieldset>
+          <label style="font-size: 18px;">Compared to our competitors, is our product quality better, worse, or about the same?</label>
+          <div class="input-group">
+            <textarea rows="5" name="rating" placeholder=" Enter your message" id="massage"></textarea>
+            <span id="text-error"></span>
+          </div>
+          </fieldset>
+          <p></p>
+          <fieldset>
+          <label for="selection" style="font-size: 18px;">Where did you first hear about us? (optional)</label>
+          <div class="input-group">
+            <select id="selection" name="method" style="width: 500px; height: 30px;">
+                <option value="select option">-Select option-</option>
+                <option value="social media">Social media</option>
+                <option value="news">News</option>
+                <option value="friend">Friend</option>
+                <option value="website">Website</option>
+                <option value="email">Email</option>
+            </select>
+          </div>
+          </fieldset>
+          <p></p>
+          <fieldset>
+          <label style="font-size: 18px;">Do you have any comments, questions, or suggestions?</label> 
+          <div class="input-group">
+            <textarea rows="5" name="customer-comment"  placeholder=" Enter your message" id="comment"></textarea>
+            <span id="comment-error"></span>
+          </div>
+          </fieldset>
+    
+        <button type="submit" id="submit">Submit</button>
+        
+       
+      </form>
+      
+      </div>  
+      <div id="error-1"   class="container-1" style="display: none;">
+        <form id="id-form">
+          <p style="text-align: center; font-size: 18px;">Thanks for filling up the form!</p>
+          <button type="submit">Close</button>
+        </form>
+    </div>
+        <script src="comment.js"></script>
+        <footer>
+          <div class="row3">
+          <div class="footer-class">
+            <h4 id="about-us">About Us</h4>
+            <p style="font-size: 18px;"><b>Rambler</b> is one of the most respected and successful names in the global travel industry,<br> 
+              with a long and rich company heritage spanning 30 years. The definitive resource for global travel<br> content,
+              its reputation has been built on journalistic credibility.A fast-growing, 
+              pioneering and <br>diverse global travel content business, contact us to find out more about us.</p>
+          </div>
+          <div class="contact">
+            <h4>Follows Us On:</h4>
+            <p style="font-size: 18px;"><a href="">Instergram</a></p>
+            <p style="font-size: 18px;"><a href="">Facebook</a></p>
+            <p style="font-size: 18px;"><a href="">Twitter</a></p>
+          </div>
+          </div>
+          <div class="creator">
+            <a href="page_editor.html" target="_blank" style="font-size: 20px;">created by:Student 2</a>
+          </div>
+          <p style="margin-left: 30px;"><a href="main.html" style="text-decoration: none;color: rgb(13, 159, 5);"><img src="Images/leaf_logo.ico" alt="logo" style="width: 50px; height: 50px; float: right; margin-right: 20px; ">www.Rambler.lk</a></p>
+        </footer>
+    </body>
+    </html>

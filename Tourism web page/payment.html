@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rambler</title>
+    <link rel="icon" type="package_img/x-icon" href="package_img/leaf_logo.ico">
+    <link rel = "stylesheet" href="payment.css">
+    <link rel = "stylesheet" href="web_footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+
+</head>
+<body>
+    
+    <div class = "container">
+        <form action="form">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">BILLING ADDRESSS</h3>
+
+                    <div class="inputBox">
+                        <label>FULL NAME:</label>
+                        <input type="text" placeholder="pasan madawa" id="name_errorInput" onkeyup="validateName()">
+                        <span id="name_error"></span>
+
+                    </div>
+
+                    <div class="inputBox">
+                        <label>PHONE NO:</label>
+                        <input type="tel" placeholder="011-1234567" id="number_errorInput" onkeyup="validateNumber()" >
+                        <span id="number_error"></span>
+                    </div>
+
+                    <div class="inputBox">
+                        <label>EMAIL:</label>
+                        <input type="email" placeholder="example@example.com" id="email_errorInput" onkeyup="validateEmail()">
+                        <span id="email_error"></span>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <label>ADDRESSS:</label>
+                        <input type="text" placeholder="room-street-localty">
+                        
+                    </div>
+
+                    <div class="inputBox">
+                        <label>CITY:</label>
+                        <input type="text" placeholder="galle">
+                        
+                    </div>
+
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label>STATE:</label>
+                            <input type="text" placeholder="sri lanka">
+                           
+                        </div>
+                        
+                        
+                    </div>
+
+                    
+                </div>
+
+                <div class="col">
+                    <h3 class="title">PAYMENT</h3>
+
+                    <div class="inputBox">
+                        <label>Card accepted:</label>
+                        
+                            <div class="column">
+                                <img onclick="increaseSize()" id="imgPay1" src="package_img/visa.png" alt="">
+                                <img onclick="increaseSize()" id="imgPay2" src="package_img/master_card.png" alt="">
+                                <img onclick="increaseSize()" id="imgPay3" src="package_img/american_ex.png" alt="">
+                                <img onclick="increaseSize()" id="imgPay4" src="package_img/paypal.png" alt="">
+                            </div>    
+                            
+                        
+                        
+                    </div>
+
+                    <div class="inputBox">
+                        <label>name on card:</label>
+                        <input type="text" placeholder="pasan madawa" id="cardName_errorInput" onkeyup="validateCardName()" >
+                        <span id="cardName_error"> </span>
+                        
+                    </div>
+
+                    
+                    
+                    <div class="inputBox">
+                        <label>credit card number:</label>
+                        <input type="text"  placeholder="1111-2222-3333-4444" id="cardNumber_errorInput" onkeyup="validateCardNumber()" >
+                        <span id="creditNumber_error"> 
+                        </span>
+                    </div>
+
+                    <div class="inputBox">
+                        <label>exp month:</label>
+                        
+                        <select   class="exp_month">
+                            <option value=" 01">01</option>
+                            <option value=" 02">02</option>
+                            <option value=" 03">03</option>
+                            <option value=" 04">04</option>
+                            <option value=" 05">05</option>
+                            <option value=" 06">06</option>
+                            <option value=" 07">07</option>
+                            <option value=" 08">08</option>
+                            <option value=" 09">09</option>
+                            <option value=" 10">10</option>
+                            <option value=" 11">11</option>
+                            <option value=" 12">12</option>
+                        </select>
+                    </div>
+
+
+                    <div class="flexbox">
+                       <div class="inputBox">
+                        <label>exp year:</label>
+                        
+                        <select class="exp_year">
+                            <option value=" 2023">2023</option>
+                            <option value=" 2024">2024</option>
+                            <option value=" 2025">2025</option>
+                            <option value=" 2026">2026</option>
+                            <option value=" 2027">2027</option>
+                            <option value=" 2028">2028</option>
+                        </select>
+                       </div>
+
+                       <div class = "inputBox">
+                        <label>CVV :</label>
+                        <input type="text" placeholder="123" id="cvv_errorInput" onkeyup="validateCvv()">
+                        <span id="cvv_error"> </span>
+                       </div>
+                    </div>
+
+                    <div  class="inputBox">
+                        <label>Total Amount:</label>
+                        <input id="fillTotal" type="text"   >
+                    </div>
+
+                </div>
+            </div>
+            <button type="button" class="confirm_button" onclick="return validateForm()">CONFIRM</button>
+            <span id="confirm_error"></span>
+            <button type="button" class="cancle_button">CANCLE</button>
+        
+        </form>  
+           
+
+    </div>
+    
+    <footer>
+        <div class="row3">
+        <div class="footer-class">
+          <h4 id="about-us">About Us</h4>
+          <p><b>Rambler</b> is one of the most respected and successful names in the global travel industry,<br> 
+            with a long and rich company heritage spanning 30 years. The definitive resource for global travel<br> content,
+            its reputation has been built on journalistic credibility.A fast-growing, 
+            pioneering and <br>diverse global travel content business, contact us to find out more about us.</p>
+        </div>
+        <div class="contact">
+          <h4>Follows Us On:</h4>
+          <p><a href="">Instergram</a></p>
+          <p><a href="">Facebook</a></p>
+          <p><a href="">Twitter</a></p>
+        </div>
+        </div>
+        <div class="creator">
+          <a href="page_editor1.html" target="_blank">created by:Student 1|All Rights Reserved</a>
+        </div>
+        <p style="margin-left: 30px;"><a href="main.html" style="text-decoration: none;color: rgb(13, 159, 5);"><img src="package_img/leaf_logo.ico" alt="logo" style="width: 50px; height: 50px; float: right; margin-right: 20px; ">www.Rambler.lk</a></p>
+      </footer>
+
+      <script src="payment.js"></script>
+</body>
+</html>
